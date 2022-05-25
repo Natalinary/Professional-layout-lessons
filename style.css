@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+	font-family:'Lato-Bold';
+	font-style:normal;
+	font-weight: 700;
+	src: url(fonts/Lato-Bold.ttf);
+  }
+
+@font-face {
+	font-family:'Lato-Black';
+	font-style:normal;
+	font-weight: 900;
+	src: url(fonts/Lato-Black.ttf);
+  }
+
+@font-face {
+	font-family:'Lato-Regular';
+	font-style:normal;
+	font-weight: 400;
+	src: url(fonts/Lato-Regular.ttf);
+  }  
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	
+}
+
+.top-header {
+	background: #222222;
+}
+
+.header-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 75px;
+}
+
+.header-list {
+	align-items: center;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.search {
+	padding-top: 5px;
+	margin-left: 41px;
+}
+
+.profile {
+	margin: 0 33px 0 33px 
+}
+
+.content-header {
+	background: #F1E4E6;
+}
+
+.content-header-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-content-header-box {
+	display: flex;
+}
+
+.line-content-header {
+	width: 12px;
+	background: #F16D7F;
+	margin-right: 16px;
+}
+
+.title-content-header {
+	width: 377px;
+	font-family:'Lato-Bold';
+	font-size: 32px;
+	line-height: 38px;
+	color: #222222;
+	text-transform: uppercase;
+}
+
+.title-header-start{
+	font-family:'Lato-Black';
+	font-size: 48px;
+	line-height: 58px;
+	color: #222222;
+}
+
+.title-header-end {
+	color: #F16D7F;
+}
+
+
+.catalog {
+	margin-bottom: 96px;
+}
+
+.catalog-clothes-box {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 65px;
+	margin-bottom: 30px;
+}
+
+.card-catalog-clothes {
+	position: relative;
+}
+
+.txt-catalog-clothes {
+	text-transform:uppercase;
+	font-family:'Lato-Regular';
+	position: absolute;
+	left: 114px;
+    top: 110px;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.span-txt-catalog{
+	color: #F16D7F;
+	font-family:'Lato-Bold';
+	font-size: 24px;
+	line-height: 29px;
+	
+}
+
+.card-catalog-accesories {
+	position: relative;
+}
+
+.txt-accesories {
+	text-transform:uppercase;
+	font-family:'Lato-Regular';
+	position: absolute;
+	left: 480px;
+    top: 66px;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+}
