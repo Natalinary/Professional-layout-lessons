@@ -1,3 +1,12 @@
+$color-option:#F16D7F;
+
+.title-main-registration {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color:$color-option; 
+}
 
 .form-box {
 	display: flex;
@@ -64,7 +73,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    background: #F16D7F;
+    background: $color-option;
     width: 167px;
     text-transform: uppercase;
     padding: 16px 25px;
