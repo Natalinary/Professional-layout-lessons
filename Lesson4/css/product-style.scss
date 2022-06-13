@@ -1,0 +1,151 @@
+@font-face{
+    font-family: 'Lato-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family:'Lato-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+$color-option:#F16D7F;
+
+.main-back{
+	background:#F8F3F4;
+} 
+
+.title-main-product {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-option;
+}
+
+.link-menu-product {
+	text-decoration: none;
+	font-family: 'Lato-Light';
+	font-size: 14px;
+	line-height: 17px;
+	color: #636363;
+	text-transform: uppercase;
+}
+
+.link-product-actual {
+	color: $color-option;
+}
+
+.img-product{
+	width: 100%;
+	background: #F7F7F7;
+	min-height: 777px;
+}
+
+.img-desc-product {
+	margin: 0 auto;
+	display: block;
+}
+
+.desc-product-box {
+    padding-top: 64px;
+    margin-top: -53px;
+	min-height: 600px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+}
+
+.txt-product-box {
+    margin:0 auto;
+}
+
+
+.txt-desc-product {
+	text-align: center;
+} 
+
+.first-line-product {
+    width: 63px;
+    height: 3px;
+    border: none;
+    background: #EF5B70;
+    margin: 12px auto;
+}
+
+.second-line-product {
+    width: 641px;
+    margin: 65px auto;
+}
+
+.title-section-catalog {
+	text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-option;
+}
+
+#color-select {
+    border: none;
+}
+
+#size-select {
+    border: none;
+}
+
+#quantity-select {
+    border: none;
+}
+   
+.heading-desc-product {
+    font-family: "Lato-Light";
+	text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+
+.txt-desc {
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5E5E;
+    width: 555px;
+    margin: 0 auto;
+}
+
+.txt-price {
+    font-family: 'Lato-Light';
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+
+.items-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 128px auto;
+}
+
+.select-box {
+    text-align: center;
+}
+
+.select-box select {
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.select-box select:hover  {
+    color:$color-option;
+}
+
+#size-select {
+    margin: 0 23px;
+} 
