@@ -1,42 +1,10 @@
-@font-face{
-    font-family: 'Lato-Light';
-    font-style: normal;
-    font-weight: 300;
-    src: url(../fonts/Lato-Light.ttf);
-}
 
-@font-face {
-    font-family:'Lato-Regular';
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/Lato-Regular.ttf);
-}
+@import "fonts";
+@import "main";
+@import "select";
+
 $color-option:#F16D7F;
 
-.main-back{
-	background:#F8F3F4;
-} 
-
-.title-main-product {
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 29px;
-    color: $color-option;
-}
-
-.link-menu-product {
-	text-decoration: none;
-	font-family: 'Lato-Light';
-	font-size: 14px;
-	line-height: 17px;
-	color: #636363;
-	text-transform: uppercase;
-}
-
-.link-product-actual {
-	color: $color-option;
-}
 
 .img-product{
 	width: 100%;
@@ -111,17 +79,6 @@ $color-option:#F16D7F;
     color: $color-option;
 }
 
-#color-select {
-    border: none;
-}
-
-#size-select {
-    border: none;
-}
-
-#quantity-select {
-    border: none;
-}
    
 .heading-desc-product {
     font-family: "Lato-Light";
@@ -155,25 +112,6 @@ $color-option:#F16D7F;
     margin: 128px auto;
 }
 
-.select-box {
-    text-align: center;
-}
-
-.select-box select {
-    border: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-}
-
-.select-box select:hover  {
-    color:$color-option;
-}
-
-#size-select {
-    margin: 0 23px;
-}
 
 .add-box-product {
     border: 1px solid #FF6A6A;
