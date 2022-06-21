@@ -1,0 +1,106 @@
+@import "vars"
+@import "mixins"
+@import "select" 
+
+
+.img-product
+  width: 100%
+  background: #F7F7F7
+  min-height: 777px
+
+.img-box
+  position: relative
+
+.fa-solid
+  font-size: 21px
+  padding: 12px 17px
+  background: rgba(42, 42, 42, 0.15)
+  position: absolute
+
+  &:hover
+    color: #F16D7F
+
+.fa-angle-left
+  top: 350px
+
+.fa-angle-right
+  top: 350px
+  right: 0px
+
+.img-desc-product
+  margin: 0 auto
+  display: block
+
+.desc-product-box
+  transform: translate(0, -60px)
+  padding-top: 64px
+  min-height: 600px
+  background: #FFFFFF
+  border: 1px solid #EAEAEA
+  margin-bottom: 129px
+
+.txt-product-box
+  margin: 0 auto
+
+.txt-desc-product
+  text-align: center
+
+.first-line-product
+  width: 63px
+  height: 3px
+  border: none
+  background: #EF5B70
+  margin: 12px auto
+
+.second-line-product
+  width: 641px
+  margin: 65px auto
+
+.title-section-catalog
+  @include txt(uppercase, null, 14px, 17px, null)
+  color: $color-option
+
+.heading-desc-product
+  font-family: "Lato-Light"
+  @include txt(uppercase, null, 18px, 22px, null)
+  color: #4D4D4D
+  margin-bottom: 48px
+
+.txt-desc
+  font-family: 'Lato-Light'
+  @include txt(null, null, 14px, 17px, null)
+  color: #5E5E5E
+  width: 555px
+  margin: 0 auto
+
+.txt-price
+  font-family: 'Lato-Light'
+  @include txt(null, null, 24px, 29px, null)
+  margin-top: 32px
+  color: #EF5B70
+
+.items-flex
+  display: flex
+  justify-content: space-between
+  margin: 0 auto 128px
+
+.add-box-product
+  border: 1px solid #FF6A6A
+  width: 211px
+  height: 47px
+  margin: 48px auto 64px auto
+
+.add-cart-product
+  display: block
+  display: flex
+  text-decoration: none
+  justify-content: center
+  padding: 13px
+  align-items: center
+  color: #FF6A6A
+
+.img-add-cart-product
+  margin-right: 22px
+
+  &
+    display: block

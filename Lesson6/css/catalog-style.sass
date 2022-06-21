@@ -1,0 +1,34 @@
+*
+  margin: 0
+  padding: 0
+
+@import "vars"
+@import "fonts"
+@import "mixins"
+@import "container"
+@import "header"
+@import "footer"
+@import "main"
+@import "select"
+@import "items"
+@import "pagination"
+
+.filter
+  display: flex
+  align-items: center
+
+.title-filter
+  @include txt(uppercase, 600, 14px, 17px,null)
+  margin-right: 11px
+
+.select-filter-box
+  display: flex
+  height: 132px
+  align-items: center
+
+.select-box
+  margin: 0 auto
+
+.item7
+  width: 360px
+  height: 420px
