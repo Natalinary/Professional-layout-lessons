@@ -1,0 +1,101 @@
+*
+  margin: 0
+  padding: 0
+
+@import "vars"
+@import "fonts"
+@import "mixins"
+@import "container"
+@import "header"
+@import "footer"
+@import "main"
+@import "items"
+@import "button"
+
+.catalog
+  margin-bottom: 96px
+
+  &-clothes-box
+    display: flex
+    justify-content: space-between
+    margin-top: 65px
+    margin-bottom: 30px
+
+.card-catalog-clothes
+  position: relative
+  width: 1/3$width-site
+
+.card-catalog-clothes:hover img
+  filter: brightness(170%)
+
+
+.txt-catalog-clothes
+  @include txt(uppercase, null, 16px, 19px, center)
+  position: absolute
+  left: 114px
+  top: 110px
+  color: #FFFFFF
+
+.span-txt-catalog
+  @include txt(null, null, 24px, 29px, null)
+  color: $color-option
+  font-family: 'Lato-Bold'
+
+.card-catalog-accesories
+  position: relative
+  width: 100%
+
+.card-catalog-accesories:hover img
+  filter: brightness(170%);  
+
+.txt-accesories
+  @include txt(uppercase, null, 16px, 19px, center)
+  position: absolute
+  left: 480px
+  top: 66px
+  color: #FFFFFF
+
+.featured
+  width: 100%
+
+  &-box
+    margin-bottom: 96px
+
+.heading-featured
+  @include txt(null, null, 30px, 36px, center)
+  color: #222222
+
+.txt-featured
+  @include txt(null, null, 14px, 17px, center)
+  margin-top: 6px
+  margin-bottom: 48px
+  color: #9F9F9F
+
+.service
+  width: 100%
+  min-height: 341px
+  background: #222224
+
+  &-section-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 341px
+
+.img-service-section
+  margin: 0 auto
+  display: block
+
+.heading-service-section
+  @include txt(null, 400, 20px, 24px, center)
+  color: #FBFBFB
+  margin: 25px auto 16px
+
+.heading-servis-section-center
+  margin-top: 18px
+
+.txt-service-section
+  @include txt(null, null, 14px, 17px, center)
+  font-family: 'Lato-Light'
+  color: #FBFBFB
+  width: 360px

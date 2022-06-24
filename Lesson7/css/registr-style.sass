@@ -1,0 +1,87 @@
+@import "vars"
+@import "fonts"
+@import "mixins"
+@import "container"
+@import "header"
+@import "footer"
+@import "main"
+@import "items"
+@import "button"
+
+.title-main-registration
+  @include txt(uppercase, 400, 24px, 29px, null)
+  color: $color-option
+
+.form-box
+  display: flex
+  justify-content: space-between
+  margin-top: 64px
+  margin-bottom: 96px
+
+.form
+  width: 360px
+
+.txt-input-registr
+  font-family: 'Lato-Light'
+  @include txt(capitalize, null, 16px, 19px, null)
+  color: #222222
+
+.input-name
+  margin-top: 20px
+  width: 360px
+  height: 45px
+
+  &
+    font-family: 'Lato-Light'
+    @include txt(capitalize, null, 13px, 16px, null)
+    color: #B1B1B1
+    padding-left: 17px
+
+.field-reg
+  border: none
+
+
+  &-radio
+    display: flex
+    margin-top: 30px
+    margin-bottom: 33px
+
+.box-radio
+  margin-right: 20px
+
+.input-radio
+  margin-right: 10px
+
+.txt-form-registration
+  font-family: 'Lato-Light'
+  @include txt(null, null, 13px, 16px, null)
+  color: #B1B1B1
+  margin-top: 15px
+  margin-bottom: 40px
+
+
+.fa-arrow-right-long
+  margin-left: 20px
+  color: #FFFFFF
+
+.loy-prog
+  font-family: 'Lato-Light'
+  font-size: 24px
+  line-height: 29px
+  color: #000000
+  width: 652px
+
+.heading-loy-prog
+  @include txt(uppercase, 300, null, null, null)
+
+.txt-loy-prog
+  margin: 21px 0
+
+.list-loy-prog
+  list-style-type: none
+  list-style-image: url(../img/Vector-list-reg.svg)
+  padding-left: 26px
+
+.item-list-loy-prog
+  margin-bottom: 16px
+  padding-left: 23px

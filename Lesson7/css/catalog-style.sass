@@ -1,0 +1,59 @@
+*
+  margin: 0
+  padding: 0
+
+@import "vars"
+@import "fonts"
+@import "mixins"
+@import "container"
+@import "header"
+@import "footer"
+@import "main"
+@import "select"
+@import "items"
+@import "pagination"
+
+.title-filter
+  @include txt(uppercase, 600, 14px, 17px,null)
+  margin-right: 11px
+
+.select-filter-box
+  display: flex
+  height: 132px
+  align-items: center
+
+.details-filt
+  width: 360px
+  display: flex
+  flex-direction: column
+
+.details-filt hr
+  color: #EBEBEB
+  margin: 11px 24px
+
+     
+
+
+.heading-filter-box
+  display: flex
+  align-items: center
+  margin-top: 16px
+
+.title-filter
+  list-style: none
+
+.title-filter:after
+  content: url("../img/Vector-filter.svg") 
+
+.line-filter
+  width: 5px
+  background-color: $color-option
+  height: 37px
+  margin-right: 11px
+
+.select-box
+  margin: 0 auto
+
+.item7
+  width: 360px
+  height: 420px
