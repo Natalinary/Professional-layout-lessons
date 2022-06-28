@@ -9,7 +9,9 @@
     <title>Product</title>
 </head>
 <body>
-	<header class="header">
+  <div class="box-body">
+    <div class="box-not-footer">
+    <header class="header">
 		<nav class="nav-header">
 			<div class="container nav-header-box">
 			<div class="nav-header-left">
@@ -24,7 +26,7 @@
 			</div>
 			<div class="nav-header-right">
 				<ul class="nav-header-list">
-				<li class="menu">
+				  <li class="menu">
 								<a href="#" class="nav-link-header-right">
 									<img src="img/menu.svg" alt="menu-icon"></a>
 					<div class="menu-box">
@@ -50,17 +52,17 @@
 						<a href="#" class="menu-link">Bags</a>
 					</div>
 					</div>
-				</li>
-				<li class="profile">
+				  </li>
+				  <li class="profile">
 								<a href="registration.html" class="nav-link-header-right" target="_blank">
 									<img src="img/profile.svg" alt="profile-icon">
 								</a>
-							</li>
-				<li class="cart">
-								<a href="#" class="nav-link-header-right">
+				  </li>
+				  <li class="cart">
+						<a href="cart.html" class="nav-link-header-right">
 									<img src="img/cart.svg" alt="cart-icon">
-								</a>
-							</li>
+						</a>
+				  </li>
 				</ul>
 			</div>  
 			</div>  
@@ -70,7 +72,7 @@
 		<div class="container main-box main-back">
 			<h1 class="title-main-product">new arrivals</h1>
       <div class="link-menu-main-product-box">
-        <a href="#" class="link-menu-product">home/</a>
+        <a href="index.html" class="link-menu-product">home/</a>
         <a href="#" class="link-menu-product">men/</a>
         <a href="#" class="link-menu-product link-product-actual">new arrivals</a>
       </div>  
@@ -112,12 +114,12 @@
                 <option value="3">3</option>
             	</select>  
             </form>
-            <div class="add-box-product">
-							<a class="add-cart-product" href="#">
+            <button class="add-box-product">
+              <a class="add-cart-product" href="#">
 								<img class="img-add-cart-product" src="img/cart-mini-pink.svg" alt="cart">
 								<p class="txt-add-cart-product">Add to Cart</p>
 							</a>  
-						</div>
+            </button> 
         </div>    
     </div>
   </section>
@@ -173,7 +175,8 @@
       </div>   
     </div>  
   </section>
-  <footer class="footer">
+    </div>
+    <footer class="footer">
   	<section class="content-footer">
     	<div class="container content-footer-box ">
       	<article class="feedback">
@@ -185,7 +188,7 @@
           for out newletter and promotion</p>
         	<div class="input-box">
           	<input class="input" type="email" placeholder="Enter Your Email">
-          	<p class="txt-input">Subscribe</p>
+          	<button class="button-sub">Subscribe</button>
         	</div>
       	</form> 
    		</div>
@@ -205,7 +208,8 @@
       	</div>
     	</div>
   	</div>
-	</footer>
-  <script src="https://kit.fontawesome.com/c8f6e90834.js" crossorigin="anonymous"></script>    
+	  </footer>
+  </div>
+<script src="https://kit.fontawesome.com/c8f6e90834.js" crossorigin="anonymous"></script>    
 </body>
 </html>
