@@ -1,0 +1,103 @@
+@import "fonts"
+
+.main
+  background: #F1E4E6
+
+  &-box
+    display: flex
+    align-items: center
+    min-height: 148px
+    justify-content: space-between
+
+.main-back
+  background: #F8F3F4
+
+.title-main-product
+  @include txt(uppercase, 400, 24px, 29px, null)
+  color: $color-option
+
+.link-menu-product
+  text-decoration: none
+  @include txt(uppercase, null, 14px, 17px, null)
+  font-family: 'Lato-Light'
+  color: #636363
+
+.link-menu-product:hover
+  color: $color-option
+
+.link-product-actual
+  color: $color-option
+
+.line-main
+  width: 12px
+  background: $color-option
+  margin-right: 16px
+
+.title-main-box
+  display: flex
+  width: 36%
+
+.title-main
+  @include txt(uppercase, null, 32px, 38px, null)
+  font-family: 'Lato-Bold'
+  color: #222222
+  &-start
+    font-family: 'Lato-Black', sans-serif
+    @include txt(uppercase, 900, 48px, 58px, null)
+    color: #222222
+    display: block
+  &-end
+    color: $color-option
+
+.title-main-end
+  color: $color-option
+
+@media (max-width: 768px)
+  .main-box
+    height: 368px
+
+  .main-catalog
+    height: 148px
+
+  .img-man-main
+    transform: scale(0.49)
+
+  .title-main-box
+    width: 100%
+
+  .title-main-start
+    font-size: 44px
+    line-height: 53px
+
+  .title-main
+    font-size: 24px
+    line-height: 29px
+
+@media (max-width: 376px)
+  .main
+    display: flex
+
+  .photo-man-content-header
+    display: none
+
+  .line-main
+    margin-right: 15px
+
+  .title-main-box
+    margin: 0 auto
+
+  .title-main
+    font-size: 20px
+    line-height: 24px
+
+  .title-main-start
+    font-size: 38px
+    line-height: 46px
+
+  .main-prod, .main-catalog, .main-cart
+    flex-direction: column
+    height: 148px
+    justify-content: center
+
+  .title-main-product
+    margin-bottom: 32px

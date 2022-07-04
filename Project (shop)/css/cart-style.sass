@@ -1,0 +1,130 @@
+@import "vars"
+@import "fonts"
+@import "mixins"
+@import "container"
+@import "header"
+@import "footer"
+@import "main"
+@import "items"
+@import "button"
+
+.wrap-box
+  display: flex
+  justify-content: space-between
+  margin-top: 96px
+
+.wrap-items
+  width: 57.19%
+
+.wrap-form
+  width: 31.58%
+
+.cart-items-wrap
+  width: 100%
+
+.cart-buttons-items-box
+  display: flex
+  justify-content: space-between
+  margin: 73px 0 128px
+
+.button-cart-items
+  font-family: "Lato-Light"
+  @include txt (uppercase, null, 14px, 49px, center)
+  width: 234px
+  min-height: 49px
+  border: 1px solid #A4A4A4
+
+.form-cart
+  font-family: 'Lato-Light'
+  display: flex
+  flex-direction: column
+
+.heading-cart-form
+  @include txt (uppercase, 300, 16px, 19px, null)
+
+.input-cart-form
+  margin: 20px 0
+  height: 45px
+  padding: 0 17px
+  outline: none
+  display: block
+  box-sizing: border-box
+
+.checkout
+  margin-top: 58px
+  background: #F5F3F3
+  min-height: 214px
+  display: flex
+  flex-direction: column
+  align-items: end
+
+.checkout hr
+  width: 75%
+  text-align: center
+  color: #E2E2E2
+  display: block
+  margin: 0 auto
+
+.total-sum
+  @include txt (uppercase, null, 11px, 13px, null)
+  color: #4A4A4A
+  padding: 39px 34px 0
+  margin-bottom: 12px
+
+.grand-total-sum
+  font-family: 'Lato-Light'
+  @include txt (uppercase, 300, 16px, 19px, null)
+  color: #222222
+  padding: 0 37px
+  margin-bottom: 21px
+
+.total-span
+  margin-left: 25px
+
+.grand-total-span
+  margin-left: 25px
+  color: red
+
+@media (max-width: 768px)
+  .wrap-box
+    flex-direction: column
+    margin-top: 40px
+
+  .wrap-items
+    width: 100%  
+
+  .wrap-form
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: repeat(2, 1fr)
+    width: 100%
+    gap: 16px
+    margin-bottom: 129px
+
+  .checkout
+    margin-top: 40px
+
+  .cart-items-wrap
+    margin: 0 auto
+
+  .cart-buttons-items-box
+    margin: 30px 0 48px
+
+@media (max-width: 376px)
+  .wrap-box
+    flex-direction: column
+
+  .wrap-form
+    display: grid
+    grid-template-rows: 2fr
+    grid-template-columns: repeat(1, 1fr)
+    width: 100%
+    margin-bottom: 96px
+
+  .button-cart-items
+    width: 46.67%
+    font-size: 12px
+    line-height: 14px
+    min-height: 33px  
+    
+
