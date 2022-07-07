@@ -1,0 +1,157 @@
+@import "vars"
+
+.featured-items-grid
+  display: grid
+  gap: 30px
+  grid-template-rows: repeat(2, 1fr)
+  grid-template-columns: repeat(3, 1fr)
+
+.items-grid-catalog
+  grid-template-rows: repeat(3, 1fr)
+
+.featured-item-box
+  position: relative
+
+  &:hover .img-featured-item
+    filter: brightness(40%)
+
+    &:hover .add-box
+      display: flex
+
+.featured-item-box img
+  transition: all 1s
+
+.featured-item-link
+  text-decoration: none
+  display: block
+  width: 360px
+  background: #F8F8F8
+
+.txt-featured-item-box
+  padding: 25px 25px 18px 18px
+
+.heading-featured-item
+  margin-bottom: 13px
+  text-transform: uppercase
+  font-weight: 400
+  font-size: 13px
+  line-height: 16px
+  color: #000000
+
+.txt-featured-item
+  font-family: 'Lato-Light'
+  font-size: 14px
+  line-height: 17px
+  color: #5D5D5D
+  margin-bottom: 18px
+
+.price-featured-item
+  font-size: 16px
+  line-height: 19px
+  color: $color-option
+
+.add-box
+  display: flex
+  position: absolute
+  top: 200px
+  width: 100%
+  justify-content: center
+  pointer-events: none
+
+.add-cart
+  display: flex
+  border: 1px solid #FFFFFF
+  padding: 10px
+  text-decoration: none
+  align-items: center
+  pointer-events: auto
+
+  &:hover
+    box-shadow: 0 0 10px 0 #FFFFFF
+
+.txt-add-cart
+  margin-left: 10px
+  font-size: 14px
+  line-height: 17px
+  color: #FFFFFF
+
+.cart-item-box
+  display: flex
+  background: #FFFFFF
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+  margin-bottom: 40px
+  height: 306px
+
+.cart-item-link
+  text-decoration: none
+
+.img-cart-item
+  height: 100%
+
+.txt-cart-item-box
+  padding: 22px 32px
+
+.heading-cart-item
+  @include txt(uppercase, 400, 24px, 29px, null)
+  color: #222222
+
+.cart-list
+  @include txt(capitalize, null, 22px, 26px, null)
+  list-style-type: none
+  color: #575757
+  margin-top: 42px
+
+.item-cart-list span
+  color: $color-option
+
+.input-quant-cart-list
+  width: 44px
+  height: 24px
+  text-align: center
+
+.items-grid
+  display: grid
+  grid-template-rows: auto
+  grid-template-columns: repeat(3, 1fr)
+  margin: 68px auto 128px
+
+@media (max-width: 768px)
+  .featured-items-grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 16px
+
+  .items-grid
+    grid-template-columns: repeat(2, 1fr)
+
+  .last-featured-item-box
+    display: none
+
+@media (max-width: 376px)
+  .featured-items-grid
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-rows: repeat(6, 1fr)
+    gap: 16px
+
+  .items-grid
+    margin: 0 auto 64px
+    grid-template-columns: repeat(1, 1fr)
+
+  .last-featured-item-box
+    display: flex
+
+  .heading-cart-item
+    font-size: 16px
+    line-height: 19px
+
+  .item-cart-list
+    font-size: 14px
+    line-height: 17px
+
+  .cart-item-box
+    margin-bottom: 32px
+    .cart-item-box
+    height: 188px
+    
+  .txt-cart-item-box
+    padding: 13px 17px  
+

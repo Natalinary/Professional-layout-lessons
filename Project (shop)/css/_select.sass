@@ -1,0 +1,52 @@
+@import "vars"
+
+.select-box
+  display: flex
+  justify-content: center
+
+  & select
+    border: none
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+
+  & select:hover
+    color: $color-option
+
+#size-select
+  margin: 0 23px
+
+#color-select
+  border: none
+
+#size-select
+  border: none
+
+#quantity-select
+  border: none
+
+.select-filter-box
+  display: flex
+  align-items: center
+  color: #6F6E6E
+  justify-content: space-between
+  margin: 51px 0 65px
+
+.form-select-catalog
+  flex-grow: 1
+
+@media (max-width: 768px)
+  .select-box
+    margin: 0
+
+  .form-select-catalog
+    flex-grow: inherit
+
+  .select-filter-box
+    margin: 24px 0 40px    
+
+@media (max-width: 376px)
+  .select-box select
+    font-size: 10px
+    line-height: 12px

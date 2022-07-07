@@ -1,0 +1,111 @@
+* 
+  margin: 0
+  padding: 0
+
+@import "vars"
+@import "fonts"
+@import "mixins"
+@import "container"
+@import "header"
+@import "footer"
+@import "main"
+@import "select"
+@import "items"
+
+
+.img-product
+  width: 100%
+  background: #F7F7F7
+  min-height: 777px
+
+.img-box
+  position: relative
+
+.fa-solid
+  font-size: 21px
+  padding: 12px 17px
+  background: rgba(42, 42, 42, 0.15)
+  position: absolute
+
+  &:hover
+    color: #F16D7F
+
+.fa-angle-left
+  top: 350px
+  left: 0
+
+.fa-angle-right
+  top: 350px
+  right: 0px
+
+.img-desc-product
+  margin: 0 auto
+  display: block
+
+.desc-product-box
+  transform: translate(0, -60px)
+  padding-top: 64px
+  min-height: 600px
+  background: #FFFFFF
+  border: 1px solid #EAEAEA
+
+.txt-product-box
+  margin: 0 auto
+
+.txt-desc-product
+  text-align: center
+
+.first-line-product
+  width: 63px
+  height: 3px
+  border: none
+  background: #EF5B70
+  margin: 12px auto
+
+.second-line-product
+  width: 56.23%
+  margin: 65px auto
+
+.title-section-catalog
+  font-family: "Lato-Light"
+  @include txt(uppercase, 300, 14px, 17px, null)
+  color: $color-option
+
+.heading-desc-product
+  font-family: "Lato-Light"
+  @include txt(uppercase, null, 18px, 22px, null)
+  color: #4D4D4D
+  margin-bottom: 48px
+
+.txt-desc
+  font-family: 'Lato-Light'
+  @include txt(null, null, 14px, 17px, null)
+  color: #5E5E5E
+  width: 48.68%
+  margin: 0 auto
+
+.txt-price
+  font-family: 'Lato-Light'
+  @include txt(null, null, 24px, 29px, null)
+  margin-top: 32px
+  color: #EF5B70
+
+@media (max-width: 376px)
+  .img-desc-product
+    width: 100%
+
+  .fa-angle-left 
+    top: 200px
+    left: 0      
+
+  .fa-angle-right 
+    top: 200px
+    right: 0     
+
+  .img-product
+    min-height: 624px
+
+  .txt-desc
+    width: 85%
+   
+

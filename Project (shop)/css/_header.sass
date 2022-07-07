@@ -1,0 +1,87 @@
+.header
+  width: 100%
+
+.nav-header
+  background: #222222
+
+  &-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 75px
+
+  &-list
+    align-items: center
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+
+.menu
+  position: relative
+  padding: 22px
+  z-index: 2
+
+  &-box
+    background-color: #FFFFFF
+    padding: 35px
+    width: 232px
+    position: absolute
+    left: 60px
+    top: 60px
+    box-sizing: border-box
+    display: none
+
+  &:hover .menu-box
+      display: flex
+
+  &-heading
+      text-transform: uppercase
+      font-family: 'Lato-Bold'
+      font-weight: 700
+      font-size: 14px
+      line-height: 17px
+      color: #000000
+      margin-bottom: 4px
+
+  &-subtitle
+      text-transform: uppercase
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
+      color: $color-option
+      margin-top: 20px
+      margin-bottom: 12px
+      width: 232px
+
+  &-link
+      display: block
+      font-size: 14px
+      line-height: 17px
+      color: #6F6E6E
+      margin: 11px auto
+      text-decoration: none
+      padding: 0 22px
+
+  &-link:hover
+      color: #F16D7F
+
+.search
+  padding-top: 5px
+  margin-left: 41px
+
+.profile
+  margin: 0 33px 0 11px
+
+@media (max-width: 768px)
+  .menu-box
+    left: -36px
+    
+@media ( max-width: 376px  )
+  .profile
+    display: none  
+
+  .cart
+    display: none
+
+  .menu-box
+    left: -150px
