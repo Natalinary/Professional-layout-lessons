@@ -11,12 +11,10 @@
 
 .featured-item-box
   position: relative
-
   &:hover .img-featured-item
     filter: brightness(40%)
-
-    &:hover .add-box
-      display: flex
+  &:hover .add-box
+    display: flex
 
 .featured-item-box img
   transition: all 1s
@@ -57,6 +55,7 @@
   width: 100%
   justify-content: center
   pointer-events: none
+  display: none
 
 .add-cart
   display: flex
@@ -65,7 +64,6 @@
   text-decoration: none
   align-items: center
   pointer-events: auto
-
   &:hover
     box-shadow: 0 0 10px 0 #FFFFFF
 
@@ -150,8 +148,7 @@
   .cart-item-box
     margin-bottom: 32px
     .cart-item-box
-    height: 188px
-    
-  .txt-cart-item-box
-    padding: 13px 17px  
+      height: 188px
 
+  .txt-cart-item-box
+    padding: 13px 17px
